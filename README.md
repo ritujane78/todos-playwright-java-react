@@ -1,3 +1,3 @@
-# Todos in React
+# Testing with Playwright
 
-Testing with Playwright (ongoing)
+Todos in React (ongoing)
