@@ -1,5 +1,5 @@
 # Use OpenJDK 23 slim as the base image
-FROM openjdk:23-slim
+FROM eclipse-temurin:21-jdk
 
 # Install dependencies
 RUN apt-get update && \
@@ -24,7 +24,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Node.js and npm
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs && \
     rm -rf /var/lib/apt/lists/*
 
